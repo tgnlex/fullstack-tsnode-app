@@ -7,10 +7,12 @@
   "name": "ts-node-app",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",  
-"dependencies": {
+  "type": "module",
+  "dependencies": {
     "dotenv": "^16.4.5",
-    "undici-types": "^5.26.5"
+    "undici-types": "^5.26.5",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "scripts": {
     "start": "ts-node ./src/main.ts",
