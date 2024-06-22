@@ -7,4 +7,7 @@ const sql = (query) => {
   }
   closeDB()
 }
-export {sql}
+class Controller {
+  constructor(private db: Database) {}
+}
+export {sql, Controller}
