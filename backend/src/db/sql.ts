@@ -5,6 +5,7 @@ interface DBMigration {
   down: string | ((db: Database) => void)
 }
 function migrate(db: Database, migrations: DBMigration[], targetVersion?: number): void 
+
 const sql = (query) => {
   db.serialize(() => {
     const stmt = db.prepare(`${query}`)
