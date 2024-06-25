@@ -1,21 +1,7 @@
-import * as sqlite3 from 'sqlite3'
-import {logError, logEvent} from '../lib/log.ts';
-let db = new sqlite3.Database('./dev.db', (err) => {
-  if (err) {
-    logError(`Error while trying to Initializ DB ${err}`)
-    return err;
-  };
-  logEvent('Connected to sqlite database.')
-}
+import sqlite3 from 'sqlite3';
+import {open} from 'sqlite';
+import path from 'path';
+const dbPath = `${path.join(__dirname, 'dev.db')}`;
+const db = new sqlite3.Database(dbPath);
 
-function closeDB() {
-  return db.close((err) => {
-    if (err) {
-      logError(`Error while trying to close DB: ${err}`)
-      return err;
-    }
-    logEvent('Closed database connection.)
-  }
-}
-export default {db};
-export {closeDB};
+export {db};

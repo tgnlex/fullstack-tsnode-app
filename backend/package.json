@@ -1,29 +1,35 @@
 {
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.14.8",
-    "ts-node": "^10.9.2",
-    "tslib": "^2.6.3",
-    "typescript": "^5.4.5"
-  },
-  "name": "ts-node-app",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "dependencies": {
-    "better-sqlite3": "^11.0.0",
-    "dotenv": "^16.4.5",
-    "tsc": "^2.0.4",
-    "undici-types": "^5.26.5",
-    "winston": "^3.13.0",
-    "winston-daily-rotate-file": "^5.0.0"
-  },
+  "description": "",
+  "main": "src/main.ts",
   "scripts": {
-    "start": "ts-node ./src/main.ts",
-    "build": "tsc ./src/* ./build/*"
+    "start": "ts-node src/main.ts",
+    "db:init": "ts-node db/db.ts",
+    "db:script": "ts-node db/script.ts",
+    "db:backup": "ts-node db/functions/backup.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.8",
+    "@types/sqlite3": "^3.1.11",
+    "better-sqlite3": "^11.0.0",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "db-migrate-sqlite3": "^0.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "saveqlite": "^1.1.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.13.0"
+  }
 }

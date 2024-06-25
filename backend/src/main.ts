@@ -1,12 +1,12 @@
-import {server} from './server.ts';
+import {app} from './server.ts';
 import dotenv from 'dotenv';
 
 dotenv.config();
-const port = process.env.PORT || 5000;
-const host = process.env.HOST || "localhost";
+const port: string | number = process.env.PORT || 5000;
+const host: string = process.env.HOST || "localhost";
 
-function main(){
-  server.listen(port, () => {
+function main(): void {
+  app.listen(port, () => {
     console.log(`[API]: Server is running at http://${host}, ${port} `)
   })
 };
