@@ -1,4 +1,4 @@
-import {logger} from '../../logger/logger.js';
+import {logger} from '../logger/config.ts';
 function log(data) {
   return logger.info(data);
 }
