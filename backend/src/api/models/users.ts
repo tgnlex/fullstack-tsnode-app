@@ -1,10 +1,7 @@
-interface BaseModel = {
-  id: number;
-//  createdAt: string;
-  name: string
-}
+import {BaseModel} from '../../interfaces/model.ts'
 
 interface BaseUserModel extends BaseModel = {
+  name: string
   email: string; 
   password: string; 
   age: number;
@@ -16,4 +13,4 @@ interface Admin extends BaseUserModel = {
   accountType: "ADMIN";
 }
 
-export {User, Admin, BaseModel, BaseUserModel};
+export {User, Admin};

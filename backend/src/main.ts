@@ -1,9 +1,8 @@
 import {app} from './server.ts';
-import dotenv from 'dotenv';
+import {API_HOST, API_PORT} from './config/env.ts';
+const host = API_HOST;
+const port = API_PORT;
 
-dotenv.config();
-const port: string | number = process.env.PORT || 5000;
-const host: string = process.env.HOST || "localhost";
 
 function main(): void {
   app.listen(port, () => {
