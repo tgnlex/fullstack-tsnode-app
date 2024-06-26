@@ -12,12 +12,6 @@ const insertMany = async(table: Table, items: any[]) => {
     for (const item of items) insert(table, item);
 };
 
-try { 
-  insert(postTable, ["insertTest", "testContent"]);
-} catch (err) {
-  console.log('insert failed')
-  console.error(err);
-  throw err;
-};
 
-export {}
+
+export {insert, insertMany}

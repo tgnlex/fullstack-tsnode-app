@@ -1,12 +1,10 @@
 import {Database} from 'sqlite3';
-import {User} from '../models.ts';
 import {db} from '../../db/db.ts';
-
+import {Table} from '../interfaces/tables.ts';
 class Controller {
   public db: Database = db;
-  public tableName: string = "";
-  public fieldNames: string[] = [];
-}  
+  public table: Table;
+};
 
 
 export {Controller};
