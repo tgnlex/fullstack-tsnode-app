@@ -1,4 +1,4 @@
-import {app} from './server.ts';
+import {app} from './server/app.ts';
 import {API_HOST, API_PORT} from './config/env.ts';
 import './config/fetch-polyfill.js';
 const host = API_HOST;
