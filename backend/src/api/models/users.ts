@@ -6,11 +6,11 @@ interface BaseUserModel extends BaseModel = {
   password: string; 
   age: number;
 }
-interface User extends BaseUserModel = {
+interface UserModel extends BaseUserModel = {
   accountType: "USER";
 }
-interface Admin extends BaseUserModel = {
+interface AdminModel extends BaseUserModel = {
   accountType: "ADMIN";
 }
 
-export {User, Admin};
+export {UserModel, AdminModel};
