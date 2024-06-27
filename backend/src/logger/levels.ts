@@ -1,5 +1,5 @@
 
-const logLevels = {
+const customLevels = {
   alert:  0,
   error:  1,
   warn:   2,
@@ -11,4 +11,4 @@ const logLevels = {
   trace:  8,
   debug:  9,
 }
-export {logLevels}; 
+export {customLevels}; 
