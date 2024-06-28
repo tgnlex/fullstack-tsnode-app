@@ -9,4 +9,5 @@ const logFileTransports = [
     new DailyRotateFile.File(
 				{ filename: logPath('debug.log'), level: 'debug' }),
 ]
+const consoleTransport = new winston.transports.Console();
 export {logFileTransports};
