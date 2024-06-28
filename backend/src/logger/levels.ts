@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 const custom = {
     levels: {
       alert:  0,
@@ -11,3 +12,20 @@ const custom = {
   },
 }
 export {custom}; 
+=======
+
+const logLevels = {
+  "*": ["bold,  black", "bgBrightWhite", "dim"]
+  ALERT:  ["bold", "red", "bgwhiteBright", "dim"],
+  ERROR:  ["bold", "red"],
+  WARN:   ["bold", "orange"],
+  NOTICE: ["bold", "purple"],
+  INFO:   ["bold", "green"],
+  HTTP:   ["bold", "yellow"],
+  EVENT:  ["bold", "blue"],
+  SIGNAL: ["bold", "pink"],
+  DEBUG:  ["bold", "gray"],
+};
+export {logLevels}; 
+
+>>>>>>> Stashed changes

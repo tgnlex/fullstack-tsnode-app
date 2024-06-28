@@ -37,6 +37,7 @@
     "saveqlite": "^1.1.2",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
+    "ts-log": "^2.2.5",
     "winston": "^3.13.0",
     "winston-daily-rotate-file": "^5.0.0"
   }
