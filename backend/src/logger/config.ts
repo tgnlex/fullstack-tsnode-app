@@ -7,7 +7,7 @@ import {LOG_LEVEL} from '../config/env.ts';
 const logConfig = {
   levels: logLevels: LogLevels,
   level: LOG_LEVEL,
-  transports: [logTransports],		
+  transports: [logFileTransports, ],		
   exceptionHandlers: [ 
     new transports.File({ filename: logPath('exceptions.log')});
   ],
