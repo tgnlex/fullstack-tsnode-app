@@ -1,7 +1,8 @@
 import {BaseModel} from '../../interfaces/model.ts';
 
-interface Post extends BaseModel {
+interface PostModel extends BaseModel {
   title: string;
-  content: string;
-  
+  content: string;  
 }
+
+export {PostModel}

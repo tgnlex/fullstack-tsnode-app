@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/repos/ts-node-app/backend/logs/debug/.4933b6379771115d2207e71e3e8a04e735213c62-audit.json",
+    "files": [
+        {
+            "date": 1719556874480,
+            "name": "/repos/ts-node-app/backend/logs/debug/06-28.log",
+            "hash": "146729c48c2ebc0875b3e33a527e12999f884b2bc9b1e65180cae532c86296c4"
+        }
+    ],
+    "hashType": "sha256"
+}

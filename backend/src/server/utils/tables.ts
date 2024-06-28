@@ -1,4 +1,4 @@
-import {Table} from '../../interfaces/tables.ts';
+import {Table} from '../interfaces/table.ts';
 
 const userTable: Table = {
   name: "users",
