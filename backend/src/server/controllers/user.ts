@@ -26,6 +26,10 @@ class Users extends Controller {
 		}
   log.info(`Added ${users.length} users to dev.db`)
   }
+  public static async deleteUser(id: number): Promise<void> {
+    try {deleteItem(this.table, id)}
+    catch(err) {log.error(err)};
+  }
 }
 
 
