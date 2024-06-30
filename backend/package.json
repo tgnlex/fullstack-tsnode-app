@@ -33,6 +33,7 @@
     "express": "^4.19.2",
     "inversify": "^6.0.2",
     "nodemailer": "^6.9.14",
+    "prettier": "^3.3.2",
     "reflect-metadata": "^0.2.2",
     "saveqlite": "^1.1.2",
     "sqlite": "^5.1.1",
